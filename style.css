@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 20px;
+    
+}
+.header .logo{
+    color: #333;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.sub-logo{
+    font-weight: 200;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width:100%;
+    background-color: #2185cf;
+}
+
+.navbar a{
+    display: inline-block;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #fffffd;
+    font-weight: 700;
+    height: 100%;
+    transition: 0.3s ease;
+    
+}
+.navbar a:hover{
+    transform: scale(1.1);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-weight: 500em;
+    color: #333;
+    font-size: 2.5em;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 100px 50px 50px;
+}
+.my-img{
+    width: 300px;
+    height: 300px;
+
+}
+.about-content p{
+    margin-left:90px;
+    padding-top: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(170, 170, 170);
+    padding: 50px;
+    font-weight: 200;
+}
+
+@media (max-width:1023px){
+    .header .logo{
+        font-size: 1.5em;
+    }
+    .sub-logo{
+        font-size: 0.7em;
+    }
+
+    .about-content{
+        margin:0px 50px 20px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-content p{
+        margin-right:30px;
+    }
+
+    .my-img{
+        width: 200px;
+        height: 200px;
+    
+    }
+}
